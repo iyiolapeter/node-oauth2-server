@@ -57,7 +57,8 @@
     "build:prod": "npx npm-run-all build:clean build:prod:*",
     "build:prod:src": "npx tsc -p tsconfig.build.json",
     "build:prod:package": "node ./scripts/build-prod.js",
-    "test": "npx mocha 'test/**/*.spec.ts' --config 'test/.mocharc.jsonc'"
+    "test": "npx mocha 'test/**/*.spec.ts' --config 'test/.mocharc.jsonc'",
+    "prepare": "npm run build"
   },
   "repository": {
     "url": "https://github.com/oauthjs/node-oauth2-server.git",
